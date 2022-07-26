@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  .Header {
+    h1 {
+      margin-right: 0.5em;
+    }
+  background-color: white;
+    text-align: center;
+    color: rgb(5, 173, 179);
+    padding: 0.5em;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputbox {
+  background-color: white;
+    text-align: center;
+    h1 {
+      color: rgb(5, 173, 179);
+      text-align: center;
+      font-family: "Edu VIC WA NT Beginner", cursive;
+      padding: 0.5em;
+      margin: 0;
+    }
+
+    input {
+      width: 50%;
+      height: 50px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(231, 241, 238);
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px ;
+    }
+
+    input:hover{
+      background-color: rgb(210, 241, 235);
+    }
+  }
+}
+
+.products-container {
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(5, 0.5fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  a{
+    background-color: rgb(46, 100, 93);
+    color: white;
+    padding: 0.5em;
+    border-radius:4px;
+    text-decoration: none;
+  }
+}
+
+.card {
+  text-align: center;
+  margin: 5px 0px;
+  border: none;
+  padding: 0.8em 0.2em ;
+  border-radius: 5px;
+  background-color: #ced8d6;
+  
+
+  h5 {
+    color:black;
+    text-align: inherit;
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+ h6 {
+    color:rgb(31, 75, 67);
+    text-align: inherit;
+    font-size: 1em;
+    font-weight: lighter;
+    margin-bottom: 2em;
+    margin: 0;
+  }
+   p {
+    color: crimson;
+    text-align: inherit;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+  }
+
+  img {
+    width: 240px;
+    height: 220px;
+    transition: all 0.3s ease;
+    margin-top: 0px;
+  }
+}
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .inputbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .products-container {
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
